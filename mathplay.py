@@ -80,6 +80,7 @@ def screen_clear():
         _ = os.system('cls')
     # print out some text
 
-screen_clear()
-user = greeting()
-play(user)
+if __name__ == "__main__":
+    screen_clear()
+    user = greeting()
+    play(user)
