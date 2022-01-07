@@ -1,3 +1,4 @@
+import os
 from random import randrange
 
 def greeting():
@@ -58,5 +59,15 @@ def play():
         show_stat(success_count, failure_count, round_count)
         round_count += 1
 
+def screen_clear():
+   # for mac and linux(here, os.name is 'posix')
+   if os.name == 'posix':
+      _ = os.system('clear')
+   else:
+      # for windows platfrom
+      _ = os.system('cls')
+   # print out some text
+
+screen_clear()
 greeting()
 play()
