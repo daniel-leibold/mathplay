@@ -38,7 +38,7 @@ def show_stat(user: User, success_count, failure_count, round_count):
     if round_count == 30:
         print(f"30 Runden {user.name}! Wirklich ganz Toll! Du bist in der Hall of fame! ⭐")
 
-    print("Erfolgquote 👍: {:.2%}".format(success_rate))
+    print("Erfolgsquote 👍: {:.2%}".format(success_rate))
     print("Fehlerquote 👎: {:.2%}".format(failure_rate))
     if success_rate > 0.75:
         print(f"Wow... Super Erfolgsrate {user.name}!!! 👏 🏆")
