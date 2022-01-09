@@ -21,7 +21,7 @@ def greeting():
     age = int(input())
     print("🎂" * age)
     print(
-        f"Hi {name}! Du bist {age} Jahre alt und ein {gender_title}. Lets start! 🚀")
+        f"Hi {name}! Du bist {age} Jahre alt und ein {gender_title}. Lets start 🚀!")
     return User(name, age, gender)
 
 def show_stat(user: User, success_count, failure_count, round_count):
@@ -57,7 +57,7 @@ def play(user: User):
             f"Runde {round_count}: Was ist das Ergebnis aus {suma} ➕ {sumb} ?")
         user_input = input()
         if str(user_input).startswith("c"):
-            print("SCHADE das du aufhören willst!")
+            print("SCHADE, dass Du aufhören willst!")
             break
         user_value = int(user_input)
 
